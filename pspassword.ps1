@@ -2,6 +2,8 @@ $letter='A','B'
 
 $length=16
 
+$separator='-'
+
 $out=''
 
 For ($i=0; $i -lt $length; ++$i)
@@ -12,7 +14,7 @@ For ($i=0; $i -lt $length; ++$i)
 
   If((($i+1)%4 -eq 0) -and (($i+1) -ne $length))
   {
-    $out+='-'
+    $out+=$separator
   }
 }
 
